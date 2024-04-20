@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+.tranheader {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #e0e1dd;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  z-index: 9999;
+}
+
+.test {
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingpageicon {
+  animation: spin 2s linear infinite;
+}

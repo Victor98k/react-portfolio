@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Satoshi-Light", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("./Styles/fonts/Satoshi-Light.eot");
+  src: url("./Styles/fonts/Satoshi-Light.woff") format("woff"),
+    url("./Styles/fonts/Satoshi-Light.ttf") format("truetype"),
+    url("./Styles/fonts/Satoshi-Light.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("./Styles/fonts/Satoshi-Bold.eot");
+  src: url("./Styles/fonts/Satoshi-Bold.woff") format("woff"),
+    url("./Styles/fonts/Satoshi-Bold.ttf") format("truetype"),
+    url("./Styles/fonts/Satoshi-Bold.woff2") format("woff2");
+}
+
+/* @font-face {
+  font-family: "LigaSans-Bold";
+  src: url("./Styles/fonts/LigaSans-Bold.eot");
+  src: url("./Styles/fonts/LigaSans-Bold.woff") format("woff"),
+    url("./Styles/fonts/LigaSans-Bold.woff2") format("truetype"),
+
+} */

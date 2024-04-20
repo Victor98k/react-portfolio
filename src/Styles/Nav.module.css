@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin: 0 40px;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  color: #202020;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.navbar {
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  height: 5vh;
+  line-height: 14vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  /* border-bottom: 1px solid grey; */
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links li {
+  font-size: 2rem;
+  padding: 0 10px;
+  margin: 0 20px;
+  font-weight: 200;
+}
+.link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Lägger till en fördröjning på alla ändringar */
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+.link:hover {
+  color: grey; /* Ändrar textfärgen till svart när användaren hovrar över */
+}
+
+.linkcontact {
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  color: #202020;
+  border: 1px solid #202020; /* Lägger till en vit ram */
+  padding: 10px; /* Lägger till lite utrymme runt texten */
+  border-radius: 25px; /* Ger ramen rundade hörn för att se ut som en knapp */
+  transition: all 0.3s ease; /* Lägger till en fördröjning på alla ändringar */
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+.linkcontact:hover {
+  background-color: #202020;
+  color: white;
+  transform: scale(1.1);
+}
+
+.darkmode {
+  padding-top: 10px;
+  height: 50px;
+  width: 50px;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 50px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.darkmode:hover {
+  opacity: 0.8;
+}
+
+body.darkmode {
+  background-color: #000; /* Svart bakgrund för mörkt läge */
+  color: #fff; /* Vit text för mörkt läge */
+}
+
+/* Lägg till detta i din CSS */
+/* Lägg till detta i din CSS */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.hamburgermenu {
+  display: none;
+}
+/* För mobilstorlekar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburgermenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Lägg till denna rad */
+  }
+
+  .logo {
+    order: 1;
+  }
+  .nav-links-mobile {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Lägg till denna rad */
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #202020;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+/* For sizes above 768px */
+@media (min-width: 768px) {
+  .hamburgermenu {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: row; /* Ändra till rad för att visa länkarna horisontellt */
+    justify-content: center; /* Centrera länkarna horisontellt */
+    align-items: center; /* Centrera länkarna vertikalt */
+  }
+  .nav-links-mobile li {
+    margin: 0 10px;
+  }
+}
+
+/* Uppdatera denna klass för att inkludera en övergång */
+.navbar {
+  transition: height 0.3s ease;
+}

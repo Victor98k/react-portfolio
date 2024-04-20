@@ -1,0 +1,30 @@
+/* .parallax {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Scroller {
+  display: flex;
+  gap: 5rem;
+}
+
+.Scroller img {
+  width: 500px;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .Scroller {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .Scroller img {
+    width: 200px;
+    border-radius: 30px;
+  }
+} */

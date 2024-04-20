@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+/* inter tight bold 700  */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+.herocontainer {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+}
+
+.homehero {
+  font-family: "Montserrat", sans-serif;
+
+  text-transform: uppercase;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-size: 4.5 rem;
+  word-spacing: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 7px;
+}
+.profilehero {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.profilecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroh2 {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+/* project parallax */
+
+.ImgParallax img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* end of landing */
+
+/* stack section */
+
+.mytechcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #232323;
+}
+
+.stackheader {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 3rem;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 6rem;
+  word-spacing: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* my work section */
+
+.container {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* flex-direction: row; */
+  margin-bottom: 2rem;
+}
+.containertwo {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.containerthree {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.Firsttext {
+  flex: 1;
+  font-size: 4rem;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  padding-right: 20px;
+  font-family: "Inter Tight", sans-serif;
+}
+.mywork {
+  display: flex;
+  align-items: center;
+  padding-top: 10rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/* Start på projekt */
+
+.container,
+.containertwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.worksite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectIMG,
+.projectwo {
+  border-radius: 25px;
+  width: 55%;
+  max-width: 400%;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.projectIMG:hover,
+.projectwo:hover {
+  transform: scale(1.05);
+}
+
+/* Slut på projekt */
+
+/* About me section */
+
+.bentogridcontainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: repeat(2, 2fr);
+  gap: 1px;
+  width: 100px;
+}
+
+.profileimage {
+  width: 110px;
+  border-radius: 20%;
+}
+
+.bentogridcontainer h2 {
+  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+    radial-gradient(
+      88% 271%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(254, 254, 254, 0.25) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      50% 100%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  background-blend-mode: normal, lighten, soft-light;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 12px;
+}
+
+.largeRectangle {
+  grid-row: span 2;
+  font-family: inter;
+  font-size: 3rem;
+}
+.bentogridcontainer p {
+  font-family: inter;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* end of about me section */
+.parallaxtech {
+  font-size: 20px;
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+  .homehero {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .herocontainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .heroh2 {
+    /* display: none; */
+    font-size: 1.5rem;
+  }
+  .stackheader {
+    font-size: 7rem;
+  }
+  .stacklist {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+  .ImgParallax img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .parallaxtext {
+    font-size: 1rem;
+  }
+  .ImgParallax {
+    width: 50px;
+  }
+  .stackheader {
+    font-size: 2rem;
+  }
+  .projectscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectsbtncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .projectbtn {
+    font-size: 1rem;
+    margin-top: -80px;
+  }
+  .mytechcontainer {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+  }
+
+  .imageDescription {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .techthredsbtn {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #202020;
+    border: 1px solid var(--color-foreground);
+    padding: 10px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    cursor: none;
+    padding-bottom: 1rem;
+  }
+  .techthredsbtn:hover {
+    background-color: #202020;
+    color: white;
+    transform: scale(1.1);
+  }
+  .aboutmeheader {
+    font-size: 2.5rem;
+  }
+
+  .pictextcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .profiletext {
+    font-size: 1rem;
+    margin-top: 20px; /* adjust as needed */
+  }
+  .iconContainer {
+    display: flex;
+    margin: 20px;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .valuescontainer {
+  }
+  .valueheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bentogridcontainer {
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profileimage {
+    width: 150px;
+    margin: 1rem;
+  }
+
+  .profilepic {
+    width: 100px;
+  }
+
+  .largeRectangle {
+    font-size: 2rem;
+  }
+  .bentogridcontainer p {
+    font-family: inter;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .scrollItem {
+    flex: none;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background: #ddd;
+    border-radius: 10px;
+  }
+}
+
+/* For sizes above 768px */
+@media (min-width: 768px) {
+  .projectbtncontainer {
+  }
+  /* .worksite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  } */
+  .imageDescription {
+    /* display: none; */
+  }
+  .techthredsbtn {
+    /* display: none; */
+  }
+  .techthredsbtn {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #202020;
+    border: 1px solid var(--color-foreground);
+    padding: 10px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    cursor: none;
+    padding-bottom: 1rem;
+  }
+  .techthredsbtn:hover {
+    background-color: #202020;
+    color: white;
+    transform: scale(1.1);
+  }
+  .iconContainer {
+    margin-left: 400px;
+  }
+  .bentogridcontainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 2fr);
+    gap: 4px;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .profileimage {
+    width: 210px;
+    margin-top: 2rem;
+    border-radius: 20%;
+  }
+  .aboutMeContent {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  .aboutmetext {
+    font-size: 4rem;
+  }
+  .heroh2mobile {
+    display: none;
+  }
+}
+/* CSS */
+.Styles.progress {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+/* .bg {
+  stroke: white;
+  strokewidth: 4;
+} */
+
+/* .indicator {
+  stroke: white;
+  strokewidth: 4;
+  strokelinecap: round;
+} */
+
+.scrollList {
+  display: flex;
+  overflow-x: auto;
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 3rem;
+}
+
+.scrollItem {
+  flex: none;
+  width: 400px;
+  height: 400px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.testimonialscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  font-size: 2.5rem;
+}
