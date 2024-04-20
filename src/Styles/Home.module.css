@@ -78,7 +78,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 250px;
   background-color: #232323;
 }
 
@@ -86,11 +86,11 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-left: 3rem;
   font-family: "Inter Tight", sans-serif;
-  font-size: 6rem;
+  padding-left: 3rem;
+  font-size: 8rem;
   word-spacing: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 /* my work section */
@@ -151,8 +151,8 @@
 .projectIMG,
 .projectwo {
   border-radius: 25px;
-  width: 55%;
-  max-width: 400%;
+  width: 45%;
+  max-width: 300%;
   margin: 10px;
   transition: transform 0.3s ease;
 }
@@ -167,6 +167,7 @@
 /* About me section */
 
 .bentogridcontainer {
+  padding: 5rem;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: repeat(2, 2fr);
@@ -180,16 +181,16 @@
 }
 
 .bentogridcontainer h2 {
-  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+  background-image: linear-gradient(to left, #815c99 0%, #586294 100%),
     radial-gradient(
       88% 271%,
-      rgba(255, 255, 255, 0.25) 0%,
+      rgba(138, 114, 114, 0.25) 0%,
       rgba(254, 254, 254, 0.25) 1%,
       rgba(0, 0, 0, 0.25) 100%
     ),
     radial-gradient(
       50% 100%,
-      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.78) 0%,
       rgba(0, 0, 0, 0.3) 100%
     );
   background-blend-mode: normal, lighten, soft-light;
@@ -423,22 +424,12 @@
     display: none;
   }
 }
-/* CSS */
+
 .Styles.progress {
   position: fixed;
   top: 10px;
   left: 10px;
 }
-/* .bg {
-  stroke: white;
-  strokewidth: 4;
-} */
-
-/* .indicator {
-  stroke: white;
-  strokewidth: 4;
-  strokelinecap: round;
-} */
 
 .scrollList {
   display: flex;
@@ -450,8 +441,8 @@
 
 .scrollItem {
   flex: none;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin-right: 10px;
   background: #ddd;
   border-radius: 10px;
@@ -461,6 +452,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 7rem;
   font-size: 2.5rem;
+}
+
+.parallaxTestimonals {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
 }

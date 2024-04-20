@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 // Style
 import Styles from "../Styles/Home.module.css";
-// Images
+// Images 4 mockups
 
 import imac from "../img/imac.jpg";
 import iphonemock from "../img/2iphone-mock.png";
@@ -18,6 +18,10 @@ import instagrampost from "../img/instagram-post-mockup (1).png";
 import macairtotheside from "../img/newtasksidemac.png";
 import fourpagetechthreds from "../img/4pagetechthreds.jpg";
 import profileimage from "../img/profileimage.JPG";
+
+// Images 4 testimonials
+import AgnesTestimonal from "../testimonials/agnesTestimoanl.png";
+import JossanTestimonial from "../testimonials/jossanTestimonal.png";
 
 // icons
 
@@ -40,7 +44,6 @@ import { GoDotFill } from "react-icons/go";
 // Parallax
 
 import ParallaxText from "../components/Parallax";
-
 import Starteffect from "../components/Starteffect";
 
 const PROJECTS = [
@@ -193,19 +196,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <div className={Styles.testimonialscontainer}>
-        <h1>People i have worked with </h1>
-      </div>
-
-      <ul ref={ref} className={Styles.scrollList}>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-      </ul>
-
       <div className={Styles.bentogridcontainer}>
         <h2 className={Styles.largeRectangle}>
           ABOUT ME
@@ -223,7 +213,10 @@ function Home() {
           </div>
         </h2>
 
-        <h2>VALUES </h2>
+        <h2>
+          Core value for me
+          <p>Emphasizing mental and physical health.</p>
+        </h2>
 
         <h2>
           Connect with me <br />
@@ -232,18 +225,44 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin color="blue" size={60} />
+            <FaLinkedin color="blue" size={90} />
           </a>{" "}
           <a
             href="https://github.com/Victor98k"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub color="black" size={60} />
+            <FaGithub color="black" size={90} />
           </a>
-          <CiMail color="black" size={60} />
+          <CiMail color="black" size={90} />
         </h2>
       </div>
+
+      <div className={Styles.testimonialscontainer}>
+        <h1>People i have worked with </h1>
+      </div>
+
+      {/* <ul ref={ref} className={Styles.scrollList}> */}
+      <ParallaxText className={Styles.parallaxTestimonals} baseVelocity={1}>
+        <LazyLoadImage
+          className={Styles.parallaxTestimonals}
+          effect="blur"
+          src={AgnesTestimonal}
+          alt=""
+        />
+        <LazyLoadImage
+          className={Styles.parallaxTestimonals}
+          effect="blur"
+          src={JossanTestimonial}
+          alt=""
+        />
+      </ParallaxText>
+      {/* <li className={Styles.scrollItem}></li>
+        <li className={Styles.scrollItem}></li>
+        <li className={Styles.scrollItem}></li>
+        <li className={Styles.scrollItem}></li>
+        <li className={Styles.scrollItem}></li> */}
+      {/* </ul> */}
     </div>
   );
 }
