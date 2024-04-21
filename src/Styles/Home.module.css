@@ -461,3 +461,7 @@
   height: 500px;
   object-fit: cover;
 }
+
+.testimonialsWrapper {
+  padding-bottom: 20rem;
+}

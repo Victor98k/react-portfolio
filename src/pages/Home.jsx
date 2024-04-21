@@ -21,7 +21,8 @@ import profileimage from "../img/profileimage.JPG";
 
 // Images 4 testimonials
 import AgnesTestimonal from "../testimonials/agnesTestimoanl.png";
-import JossanTestimonial from "../testimonials/jossanTestimonal.png";
+import JossanTestimonial from "../testimonials/jossantestimonials.png";
+import ChristianTestimonial from "../testimonials/christianTestimonial.png";
 
 // icons
 
@@ -215,7 +216,7 @@ function Home() {
 
         <h2>
           Core value for me
-          <p>Emphasizing mental and physical health.</p>
+          <p>Emphasizing mental and physical health is key.</p>
         </h2>
 
         <h2>
@@ -243,26 +244,28 @@ function Home() {
       </div>
 
       {/* <ul ref={ref} className={Styles.scrollList}> */}
-      <ParallaxText className={Styles.parallaxTestimonals} baseVelocity={1}>
-        <LazyLoadImage
-          className={Styles.parallaxTestimonals}
-          effect="blur"
-          src={AgnesTestimonal}
-          alt=""
-        />
-        <LazyLoadImage
-          className={Styles.parallaxTestimonals}
-          effect="blur"
-          src={JossanTestimonial}
-          alt=""
-        />
-      </ParallaxText>
-      {/* <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li>
-        <li className={Styles.scrollItem}></li> */}
-      {/* </ul> */}
+      <div className={Styles.testimonialsWrapper}>
+        <ParallaxText className={Styles.parallaxTestimonals} baseVelocity={1}>
+          <LazyLoadImage
+            className={Styles.parallaxTestimonals}
+            effect="blur"
+            src={AgnesTestimonal}
+            alt=""
+          />
+          <LazyLoadImage
+            className={Styles.parallaxTestimonals}
+            effect="blur"
+            src={JossanTestimonial}
+            alt=""
+          />
+          <LazyLoadImage
+            className={Styles.parallaxTestimonals}
+            effect="blur"
+            src={ChristianTestimonial}
+            alt=""
+          />
+        </ParallaxText>
+      </div>
     </div>
   );
 }
