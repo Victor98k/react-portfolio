@@ -20,8 +20,8 @@ import fourpagetechthreds from "../img/4pagetechthreds.jpg";
 import profileimage from "../img/profileimage.JPG";
 
 // Images 4 testimonials
-import AgnesTestimonal from "../testimonials/agnesTestimoanl.png";
-import JossanTestimonial from "../testimonials/jossantestimonials.png";
+import AgnesTestimonal from "../testimonials/agnestestimonialrätt.png";
+import JossanTestimonial from "../testimonials/jossantestimoial rätt.png";
 import ChristianTestimonial from "../testimonials/christianTestimonial.png";
 
 // icons
