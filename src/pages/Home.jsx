@@ -8,19 +8,20 @@ import { useInView } from "react-intersection-observer";
 
 // Style
 import Styles from "../Styles/Home.module.css";
-// Images 4 mockups
 
-import imac from "../img/imac.jpg";
+// Images 4 mockups
 import iphonemock from "../img/2iphone-mock.png";
-import pixel from "../img/pixel7a.png";
-import macair from "../img/macair.jpg";
 import instagrampost from "../img/instagram-post-mockup (1).png";
 import macairtotheside from "../img/newtasksidemac.png";
 import fourpagetechthreds from "../img/4pagetechthreds.jpg";
 import profileimage from "../img/profileimage.JPG";
+import macairfigma from "../img/macairmockfigma.png";
+import macprofigma from "../img/macbookprofigma.png";
+import googlepixelmockup from "../img/googlepixelmocup.png";
+import pagetechnthreds from "../img/4pagetechnthreds.png";
 
 // Images 4 testimonials
-import AgnesTestimonal from "../testimonials/agnestestimonialrätt.png";
+import AgnesTestimonal from "../testimonials/agnesTestimonial.png";
 import JossanTestimonial from "../testimonials/jossantestimoial rätt.png";
 import ChristianTestimonial from "../testimonials/christianTestimonial.png";
 
@@ -47,12 +48,12 @@ import { GoDotFill } from "react-icons/go";
 import ParallaxText from "../components/Parallax";
 import Starteffect from "../components/Starteffect";
 
-const PROJECTS = [
-  { title: "Threds", image: imac },
-  { title: "Portfolio", image: pixel },
-  { title: "Apps", image: iphonemock },
-  { title: "Pixel", image: pixel },
-];
+// const PROJECTS = [
+//   { title: "Threds", image: imac },
+//   { title: "Portfolio", image: pixel },
+//   { title: "Apps", image: iphonemock },
+//   { title: "Pixel", image: pixel },
+// ];
 
 function Home() {
   const ref = useRef();
@@ -100,14 +101,14 @@ function Home() {
           <br /> and visually appealing applications.
         </motion.h2>
       </div>
-      <div className={Styles.ImgParallax}>
+      <div id="myprojects" className={Styles.ImgParallax}>
         <div className={Styles.techParallax}>
           <ParallaxText className={Styles.parallaxtech} baseVelocity={1}>
-            <LazyLoadImage effect="blur" src={macairtotheside} alt="" />
-            <LazyLoadImage effect="blur" src={instagrampost} alt="" />
-            <LazyLoadImage effect="blur" src={fourpagetechthreds} alt="" />
-            <LazyLoadImage effect="blur" src={macair} alt="" />
-            <LazyLoadImage effect="blur" src={iphonemock} alt="" />
+            <LazyLoadImage effect="blur" src={macairfigma} alt="" />
+
+            <LazyLoadImage effect="blur" src={macprofigma} alt="" />
+            <LazyLoadImage effect="blur" src={googlepixelmockup} alt="" />
+            <LazyLoadImage effect="blur" src={pagetechnthreds} alt="" />
           </ParallaxText>
         </div>
       </div>

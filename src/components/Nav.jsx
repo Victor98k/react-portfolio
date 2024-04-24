@@ -6,6 +6,7 @@ import { MdDarkMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from "framer-motion";
+import { animateScroll as scroll } from "react-scroll"; // Importing react-scroll
 
 function Nav() {
   const [mobile, setMobile] = useState(false);
@@ -13,6 +14,11 @@ function Nav() {
 
   const toggleMobileMenu = () => {
     setMobile(!mobile);
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("myprojects");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -30,24 +36,31 @@ function Nav() {
             onClick={toggleMobileMenu}
             size={35}
           />
-
           <ul
             className={
               mobile ? Styles["nav-links-mobile"] : Styles["nav-links"]
             }
           >
             <li>
-              <a className={Styles.link}>Home</a>
+              <a href="#home" className={Styles.link}>
+                Home
+              </a>
             </li>
             <li>
-              <a className={Styles.link}>About</a>
+              <a href="#about" className={Styles.link}>
+                About
+              </a>
+            </li>
+            {/* Use scrollToProjects to scroll to the projects section */}
+            <li>
+              <a onClick={scrollToProjects} className={Styles.link}>
+                Projects
+              </a>
             </li>
             <li>
-              <a className={Styles.link}>Projects</a>
-            </li>
-
-            <li>
-              <a className={Styles.linkcontact}>Contact</a>
+              <a href="#contact" className={Styles.linkcontact}>
+                Contact
+              </a>
             </li>
             <button className={Styles.darkmode} onClick={toggleDarkMode}>
               <MdDarkMode size={30} />
