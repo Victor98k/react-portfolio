@@ -164,9 +164,11 @@ function Home() {
           />
           <h2 className={Styles.imageDescription}>Tech & Threads</h2>
           <p className={Styles.imageDescription}>E-commerce</p>
-          <button className={Styles.techthredsbtn}>
-            Check out the project
-          </button>
+          <a href="https://habits-and-task-application-g5ms41r08.vercel.app/">
+            <button className={Styles.techthredsbtn}>
+              Check out the project
+            </button>
+          </a>
         </div>
       </div>
 
@@ -186,9 +188,11 @@ function Home() {
           <div className={Styles.worksite}>
             <h2 className={Styles.imageDescription}>Progresspilot</h2>
             <p className={Styles.imageDescription}>Habit & Tasks Tracker</p>
-            <button className={Styles.techthredsbtn}>
-              Check out the project
-            </button>
+            <a href="https://habits-and-task-application-g5ms41r08.vercel.app/">
+              <button className={Styles.techthredsbtn}>
+                Check out the project
+              </button>
+            </a>
           </div>
         </div>
       </div>
