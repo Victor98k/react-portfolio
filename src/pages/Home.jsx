@@ -345,12 +345,7 @@ function Home() {
             src={AgnesTestimonal}
             alt=""
           />
-          <LazyLoadImage
-            className={Styles.parallaxTestimonals}
-            effect="blur"
-            src={JossanTestimonial}
-            alt=""
-          />
+
           <LazyLoadImage
             className={Styles.parallaxTestimonals}
             effect="blur"
