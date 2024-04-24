@@ -2,6 +2,20 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+// MUI TIMELINE
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+
+// MUI ICONS
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import ComputerIcon from "@mui/icons-material/Computer";
+import CodeIcon from "@mui/icons-material/Code";
+
 import Nav from "../components/Nav";
 import React, { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -24,6 +38,7 @@ import pagetechnthreds from "../img/4pagetechnthreds.png";
 import AgnesTestimonal from "../testimonials/agnesTestimonial.png";
 import JossanTestimonial from "../testimonials/jossantestimoial rätt.png";
 import ChristianTestimonial from "../testimonials/christianTestimonial.png";
+import JohannaTestimonial from "../testimonials/johannatestimonial.png";
 
 // icons
 
@@ -75,7 +90,7 @@ function Home() {
   };
 
   return (
-    <div className={Styles.homebody}>
+    <div id="home" className={Styles.homebody}>
       <Starteffect />
       <Nav />
       <div className={Styles.herocontainer}>
@@ -198,7 +213,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className={Styles.bentogridcontainer}>
+      <div id="about" className={Styles.bentogridcontainer}>
         <h2 className={Styles.largeRectangle}>
           ABOUT ME
           <div className={Styles.aboutMeContent}>
@@ -239,6 +254,83 @@ function Home() {
           <CiMail color="black" size={90} />
         </h2>
       </div>
+      <div>
+        <Timeline position="alternate">
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              Current
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Fullstack Web Developer program @Nackademin <ComputerIcon />{" "}
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              January 2024
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Frontend Developer @Blowtorch <CodeIcon />{" "}
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              August 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Fullstack Web Developer program @Nackademin <ComputerIcon />
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              Mars 2022
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Club Manager SATS Hamnen <FitnessCenterIcon />
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              November 2022
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Club Manager SATS Hamnen & SATS Saltsjöbaden <FitnessCenterIcon />
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              January 2022
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              Club Manager SATS Hamnen <FitnessCenterIcon />
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </div>
 
       <div className={Styles.testimonialscontainer}>
         <h1>People i have worked with </h1>
@@ -263,6 +355,12 @@ function Home() {
             className={Styles.parallaxTestimonals}
             effect="blur"
             src={ChristianTestimonial}
+            alt=""
+          />
+          <LazyLoadImage
+            className={Styles.parallaxTestimonals}
+            effect="blur"
+            src={JohannaTestimonial}
             alt=""
           />
         </ParallaxText>

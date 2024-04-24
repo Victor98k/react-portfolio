@@ -20,6 +20,14 @@ function Nav() {
     const projectsSection = document.getElementById("myprojects");
     projectsSection.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToHome = () => {
+    const homeSection = document.getElementById("home");
+    homeSection.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -42,12 +50,12 @@ function Nav() {
             }
           >
             <li>
-              <a href="#home" className={Styles.link}>
+              <a onClick={scrollToHome} className={Styles.link}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className={Styles.link}>
+              <a onClick={scrollToAbout} className={Styles.link}>
                 About
               </a>
             </li>

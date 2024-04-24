@@ -77,9 +77,27 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+
   padding-top: 100px;
   padding-bottom: 250px;
-  background-color: #232323;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  /* background-image: linear-gradient(
+    to right,
+    #434343 0%,
+    rgba(0, 0, 0, 0.834) 100%
+  ); */
 }
 
 .stackheader {
@@ -99,7 +117,7 @@
   margin: 0 60px;
   display: flex;
   flex-direction: row-reverse;
-  /* flex-direction: row; */
+
   margin-bottom: 2rem;
 }
 .containertwo {
@@ -167,7 +185,7 @@
 /* About me section */
 
 .bentogridcontainer {
-  padding: 5rem;
+  padding: 6rem;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: repeat(2, 2fr);
