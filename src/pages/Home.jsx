@@ -36,7 +36,6 @@ import pagetechnthreds from "../img/4pagetechnthreds.png";
 
 // Images 4 testimonials
 import AgnesTestimonal from "../testimonials/agnesTestimonial.png";
-import JossanTestimonial from "../testimonials/jossantestimoial rätt.png";
 import ChristianTestimonial from "../testimonials/christianTestimonial.png";
 import JohannaTestimonial from "../testimonials/johannatestimonial.png";
 
