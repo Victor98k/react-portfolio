@@ -1,6 +1,5 @@
 import styles from "../Styles/Parallax.module.css";
 
-// ParallaxText.jsx
 import { useRef } from "react";
 import {
   motion,
@@ -46,7 +45,6 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     <div className={styles.parallax}>
       <motion.div className={styles.scroller} style={{ x }}>
         {" "}
-        {/* Ändra till detta */}
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>

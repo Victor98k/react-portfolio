@@ -39,7 +39,6 @@ li {
   align-items: center;
   background-color: var(--color-background);
   color: var(--color-foreground);
-  /* border-bottom: 1px solid grey; */
 }
 
 .nav-links {
@@ -56,12 +55,12 @@ li {
 .link {
   font-size: 1.8rem;
   text-decoration: none;
-  transition: all 0.3s ease; /* Lägger till en fördröjning på alla ändringar */
+  transition: all 0.3s ease;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
 .link:hover {
-  color: grey; /* Ändrar textfärgen till svart när användaren hovrar över */
+  color: grey;
 }
 
 .linkcontact {
@@ -69,10 +68,10 @@ li {
   text-decoration: none;
 
   color: #202020;
-  border: 1px solid #202020; /* Lägger till en vit ram */
-  padding: 10px; /* Lägger till lite utrymme runt texten */
-  border-radius: 25px; /* Ger ramen rundade hörn för att se ut som en knapp */
-  transition: all 0.3s ease; /* Lägger till en fördröjning på alla ändringar */
+  border: 1px solid #202020;
+  padding: 10px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
@@ -106,9 +105,6 @@ body.darkmode {
   color: #fff; /* Vit text för mörkt läge */
 }
 
-/* Lägg till detta i din CSS */
-/* Lägg till detta i din CSS */
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -118,7 +114,7 @@ body.darkmode {
 .hamburgermenu {
   display: none;
 }
-/* För mobilstorlekar */
+/* mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -135,7 +131,7 @@ body.darkmode {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Lägg till denna rad */
+    width: 100%;
   }
 
   .logo {
@@ -165,16 +161,15 @@ body.darkmode {
 
   .nav-links-mobile {
     display: flex;
-    flex-direction: row; /* Ändra till rad för att visa länkarna horisontellt */
-    justify-content: center; /* Centrera länkarna horisontellt */
-    align-items: center; /* Centrera länkarna vertikalt */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .nav-links-mobile li {
     margin: 0 10px;
   }
 }
 
-/* Uppdatera denna klass för att inkludera en övergång */
 .navbar {
   transition: height 0.3s ease;
 }

@@ -59,7 +59,7 @@ function Nav() {
                 About
               </a>
             </li>
-            {/* Use scrollToProjects to scroll to the projects section */}
+
             <li>
               <a onClick={scrollToProjects} className={Styles.link}>
                 Projects

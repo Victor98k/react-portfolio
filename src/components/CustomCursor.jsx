@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(false);
-  const [color, setColor] = useState("white"); // default color
-  const [cursorSize, setCursorSize] = useState("30px"); // default size
+  const [color, setColor] = useState("white");
+  const [cursorSize, setCursorSize] = useState("30px");
 
-  // Update cursor position
   useEffect(() => {
     addEventListeners();
     return () => removeEventListeners();
@@ -20,7 +19,6 @@ export default function CustomCursor() {
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", colorSchemeChanged);
 
-    // Add event listeners for specific elements
     const techSection = document.querySelector("#tech-section");
     if (techSection) {
       techSection.addEventListener("mouseenter", enlargeCursor);
@@ -60,21 +58,21 @@ export default function CustomCursor() {
   };
 
   const enlargeCursor = () => {
-    setCursorSize("100px"); // enlarged size
+    setCursorSize("100px");
   };
 
   const shrinkCursor = () => {
-    setCursorSize("60px"); // default size
+    setCursorSize("60px");
   };
 
   const enlargeAndColorCursor = () => {
-    setCursorSize("40px"); // enlarged size
-    setColor("red"); // change color to red
+    setCursorSize("40px");
+    setColor("red");
   };
 
   const shrinkAndColorCursor = () => {
-    setCursorSize("30px"); // default size
-    setColor("white"); // change color back to white
+    setCursorSize("30px");
+    setColor("white");
   };
 
   return (
