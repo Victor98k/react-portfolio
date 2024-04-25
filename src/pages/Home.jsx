@@ -352,7 +352,9 @@ function Home() {
       </div>
 
       <div className={Styles.testimonialscontainer}>
-        <h1>People i have worked with </h1>
+        <h1>
+          People I've <br /> worked with{" "}
+        </h1>
       </div>
 
       {/* <ul ref={ref} className={Styles.scrollList}> */}

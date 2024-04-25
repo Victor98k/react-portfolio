@@ -191,6 +191,7 @@
   grid-template-rows: repeat(2, 2fr);
   gap: 1px;
   width: 100px;
+  justify-content: center;
 }
 
 .profileimage {
@@ -231,6 +232,12 @@
 /* end of about me section */
 .parallaxtech {
   font-size: 20px;
+}
+
+.testimonialsWrapper h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* For mobile */
@@ -393,6 +400,7 @@
   .largeRectangle {
     font-size: 2rem;
   }
+
   .bentogridcontainer p {
     font-family: inter;
     font-size: 1.5rem;
@@ -405,6 +413,9 @@
     margin-right: 10px;
     background: #ddd;
     border-radius: 10px;
+  }
+  .testimonialscontainer h1 {
+    font-size: 2rem;
   }
 }
 
