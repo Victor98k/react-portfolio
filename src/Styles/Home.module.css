@@ -238,19 +238,29 @@
   .homehero {
     font-size: 2.5rem;
     padding-top: 2rem;
-    padding-bottom: 3rem;
   }
   .herocontainer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
 
   .heroh2 {
     /* display: none; */
     font-size: 1.5rem;
   }
-  .stackheader {
+
+  .stackContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .stackheader {
+    display: none;
+
     font-size: 7rem;
+  } */
+  .techheadermobile {
   }
   .stacklist {
     font-size: 1.5rem;
@@ -270,6 +280,16 @@
   .stackheader {
     font-size: 2rem;
   }
+  .projectIMG {
+    width: 350px;
+  }
+  .imageDescription {
+    text-align: center;
+  }
+
+  .projectwo {
+    width: 350px;
+  }
   .projectscontainer {
     display: flex;
     justify-content: center;
@@ -285,7 +305,6 @@
     margin-top: -80px;
   }
   .mytechcontainer {
-    margin-top: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,6 +335,17 @@
     background-color: #202020;
     color: white;
     transform: scale(1.1);
+  }
+  .stackheader {
+    display: none;
+  }
+  .techheadermobile {
+    text-align: center;
+  }
+
+  .techheadermobile {
+    text-align: center;
+    font-size: 3rem;
   }
   .aboutmeheader {
     font-size: 2.5rem;
@@ -380,6 +410,12 @@
 
 /* For sizes above 768px */
 @media (min-width: 768px) {
+  .techheadermobile {
+    display: none;
+  }
+  .stackHeaderMobile {
+    display: none;
+  }
   .projectbtncontainer {
   }
   /* .worksite {
@@ -394,6 +430,7 @@
   .techthredsbtn {
     /* display: none; */
   }
+
   .techthredsbtn {
     font-size: 1.2rem;
     font-weight: 800;

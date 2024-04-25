@@ -134,14 +134,9 @@ function Home() {
       </div>
       {/* Work  */}
       <div className={Styles.mywork}>
-        <div
-          className={Styles.stackheader}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 4 }}
-          transition={{ delay: 4.5 }}
-        >
-          {" "}
-          SOME OF MY WORK
+        <div className={Styles.stackContainer}>
+          <h2 className={Styles.stackheader}>SOME OF MY WORK</h2>
+          <h2 className={Styles.stackHeaderMobile}>SOME OF MY WORK</h2>
         </div>
       </div>
 
@@ -214,6 +209,7 @@ function Home() {
       <div id="tech-section" className={Styles.mytechcontainer}>
         <div className={Styles.mytechheader}>
           <h3 className={Styles.stackheader}>My Tech</h3>
+          <h3 className={Styles.techheadermobile}>My stack</h3>
           <div className={Styles.techParallax}>
             <ParallaxText className={Styles.parallaxtech} baseVelocity={-2}>
               <SiJavascript color="orange" size={100} />{" "}
