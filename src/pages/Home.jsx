@@ -82,7 +82,7 @@ function Home() {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 5.5,
+        duration: 3,
       },
     },
   };
@@ -214,7 +214,7 @@ function Home() {
             <ParallaxText className={Styles.parallaxtech} baseVelocity={-2}>
               <SiJavascript color="orange" size={100} />{" "}
               <FaHtml5 color="orange" size={100} />{" "}
-              <FaReact color="coralblue" size={100} />{" "}
+              <FaReact color="lightblue" size={100} />{" "}
               <SiCss3 color="darkblue" size={100} />{" "}
               <FaSass color="pink" size={100} />{" "}
               <SiTailwindcss color="blue" size={100} />{" "}

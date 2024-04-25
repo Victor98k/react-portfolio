@@ -12,6 +12,7 @@
   color: #202020;
   background-color: var(--color-background);
   color: var(--color-foreground);
+  z-index: 1;
 }
 
 li {
@@ -39,6 +40,8 @@ li {
   align-items: center;
   background-color: var(--color-background);
   color: var(--color-foreground);
+  position: relative;
+  z-index: 1;
 }
 
 .nav-links {
