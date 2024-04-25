@@ -52,9 +52,8 @@ import { SiCss3 } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import { SiExpress } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
-
 import { GoDotFill } from "react-icons/go";
 
 // Parallax
@@ -163,7 +162,7 @@ function Home() {
           />
           <h2 className={Styles.imageDescription}>Tech & Threads</h2>
           <p className={Styles.imageDescription}>E-commerce</p>
-          <a href="https://habits-and-task-application-g5ms41r08.vercel.app/">
+          <a href="https://tech-n-threds.vercel.app/" target="_blank">
             <button className={Styles.techthredsbtn}>
               Check out the project
             </button>
@@ -187,7 +186,10 @@ function Home() {
           <div className={Styles.worksite}>
             <h2 className={Styles.imageDescription}>Progresspilot</h2>
             <p className={Styles.imageDescription}>Habit & Tasks Tracker</p>
-            <a href="https://habits-and-task-application-g5ms41r08.vercel.app/">
+            <a
+              href="https://habits-and-task-application.vercel.app/"
+              target="_blank"
+            >
               <button className={Styles.techthredsbtn}>
                 Check out the project
               </button>
@@ -212,6 +214,7 @@ function Home() {
               <SiMysql color="orange" size={100} />{" "}
               <SiTypescript color="darkblue" size={100} />{" "}
               <SiMongodb size={100} color="green" />
+              <SiExpress size={100} />
             </ParallaxText>
           </div>
         </div>

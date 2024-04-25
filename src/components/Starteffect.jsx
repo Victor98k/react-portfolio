@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"; // Import useState
+import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Styles from "../Styles/Starteffect.module.css";
