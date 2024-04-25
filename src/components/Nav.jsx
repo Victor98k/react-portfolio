@@ -66,7 +66,7 @@ function Nav() {
               </a>
             </li>
             <li>
-              <a href="#contact" className={Styles.linkcontact}>
+              <a onClick={scrollToAbout} className={Styles.linkcontact}>
                 Contact
               </a>
             </li>
