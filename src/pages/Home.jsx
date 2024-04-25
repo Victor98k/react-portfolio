@@ -162,6 +162,9 @@ function Home() {
           />
           <h2 className={Styles.imageDescription}>Tech & Threads</h2>
           <p className={Styles.imageDescription}>E-commerce</p>
+          <p className={Styles.imageDescription}>
+            A examination task for my frontend 1 course.
+          </p>
           <a href="https://tech-n-threds.vercel.app/" target="_blank">
             <button className={Styles.techthredsbtn}>
               Check out the project
@@ -186,6 +189,14 @@ function Home() {
           <div className={Styles.worksite}>
             <h2 className={Styles.imageDescription}>Progresspilot</h2>
             <p className={Styles.imageDescription}>Habit & Tasks Tracker</p>
+            <p className={Styles.imageDescription}>
+              Group project during our Frontend 2 course. Did this together with
+              my classmates Nora and Daniel.
+            </p>
+            <p className={Styles.imageDescription}>
+              A big part for me on this project was to focus on the design and
+              moving the project forward during a short deadline.
+            </p>
             <a
               href="https://habits-and-task-application.vercel.app/"
               target="_blank"
@@ -257,7 +268,13 @@ function Home() {
           >
             <FaGithub color="black" size={90} />
           </a>
-          <CiMail color="black" size={90} />
+          <a
+            href="mailto:Victor.Hall@yh.nackademin.se"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CiMail color="white" size={90} />
+          </a>
         </h2>
       </div>
       <div>
