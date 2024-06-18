@@ -158,7 +158,7 @@ function Home() {
           <h2 className={Styles.imageDescription}>Tech & Threads</h2>
           <p className={Styles.imageDescription}>E-commerce</p>
           <p className={Styles.imageDescription}>
-            A examination task for my frontend 1 course.
+            A small sized e-commerce application.
           </p>
           <a href="https://tech-n-threds.vercel.app/" target="_blank">
             <button className={Styles.techthredsbtn}>
@@ -185,13 +185,11 @@ function Home() {
             <h2 className={Styles.imageDescription}>Progresspilot</h2>
             <p className={Styles.imageDescription}>Habit & Tasks Tracker</p>
             <p className={Styles.imageDescription}>
-              Group project during our Frontend 2 course. Did this together with
-              my classmates Nora and Daniel.
+              Me and my friends Nora and Daniel wanted to do a application that
+              we could use daily. We made this application to keep track of our
+              daily tasks and habits.
             </p>
-            <p className={Styles.imageDescription}>
-              A big part for me on this project was to focus on the design and
-              moving the project forward during a short deadline.
-            </p>
+
             <a
               href="https://habits-and-task-application.vercel.app/"
               target="_blank"
