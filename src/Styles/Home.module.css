@@ -5,6 +5,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Inter:ital,wght@1,200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,34 +17,32 @@
   padding-top: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+
+  font-weight: 100; /* ExtraLight weight */
+  /* text-align: center; */
   height: 100vh;
   width: 100%;
-  padding: 5rem;
+  /* padding: 5rem; */
+  padding-top: 7rem;
 }
 
 .homehero {
-  font-family: "Montserrat", sans-serif;
-
+  /* font-family: "Montserrat", sans-serif; */
   text-transform: uppercase;
   background-color: var(--color-background);
   color: var(--color-foreground);
-  font-size: 4.5 rem;
+  font-size: 8.2rem;
   word-spacing: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 7px;
+  padding-left: 2rem;
 }
 .profilehero {
   width: 150px;
   height: 150px;
-
   border-radius: 50%;
-
   object-fit: cover;
-
   object-position: center;
 }
 
@@ -55,7 +54,7 @@
 .heroh2 {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   padding-bottom: 10rem;
 }

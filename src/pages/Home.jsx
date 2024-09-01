@@ -19,6 +19,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import Nav from "../components/Nav";
 import React, { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import gsap from "gsap";
 
 // Style
 import Styles from "../Styles/Home.module.css";
@@ -87,19 +88,29 @@ function Home() {
     },
   };
 
+  const introTextRef = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      introTextRef.current,
+      { opacity: 0, x: -900 }, // Start off-screen to the left
+      {
+        opacity: 1,
+        x: 0,
+        duration: 8,
+        ease: "power2.out",
+      } // Slide in to the final position with a smooth ease
+    );
+  }, []);
+
   return (
     <div id="home" className={Styles.homebody}>
       <Starteffect />
       <Nav />
       <div className={Styles.herocontainer}>
-        <motion.h1
-          className={Styles.homehero}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 4 }}
-          transition={{ delay: 5.5 }}
-        >
+        <h1 ref={introTextRef} className={Styles.homehero}>
           Fullstack Web Developer with Designer's Eye <br />
-        </motion.h1>
+        </h1>
       </div>
 
       <div ref={refInView} className={Styles.profilecontainer}>
