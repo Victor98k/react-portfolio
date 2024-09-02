@@ -15,11 +15,13 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import ComputerIcon from "@mui/icons-material/Computer";
 import CodeIcon from "@mui/icons-material/Code";
-
+import AutoModeIcon from "@mui/icons-material/AutoMode";
+// End
 import Nav from "../components/Nav";
 import React, { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Style
 import Styles from "../Styles/Home.module.css";
@@ -68,7 +70,7 @@ import Starteffect from "../components/Starteffect";
 //   { title: "Apps", image: iphonemock },
 //   { title: "Pixel", image: pixel },
 // ];
-
+gsap.registerPlugin(ScrollTrigger);
 function Home() {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ ref });
@@ -89,18 +91,48 @@ function Home() {
   };
 
   const introTextRef = useRef();
+  const iconRef = useRef();
 
   useEffect(() => {
     gsap.fromTo(
       introTextRef.current,
-      { opacity: 0, x: -900 }, // Start off-screen to the left
+      { opacity: 0, x: -900 },
       {
         opacity: 1,
         x: 0,
-        duration: 8,
+        duration: 9.5,
         ease: "power2.out",
-      } // Slide in to the final position with a smooth ease
+      }
     );
+
+    gsap.fromTo(
+      ".profileText",
+      { opacity: 0, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 5,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: ".profileText",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.to(iconRef.current, {
+      rotation: 360,
+      scrollTrigger: {
+        trigger: iconRef.current,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+      },
+      repeat: -1,
+      ease: "none",
+    });
   }, []);
 
   return (
@@ -109,21 +141,18 @@ function Home() {
       <Nav />
       <div className={Styles.herocontainer}>
         <h1 ref={introTextRef} className={Styles.homehero}>
-          Fullstack Web Developer with Designer's Eye <br />
+          Fullstack Web{" "}
+          <AutoModeIcon className={Styles.heroIcon} ref={iconRef} /> Developer
+          with Designer's Eye <br />
         </h1>
       </div>
 
       <div ref={refInView} className={Styles.profilecontainer}>
-        <motion.h2
-          className={Styles.heroh2}
-          variants={variants}
-          initial="hidden"
-          animate={inView ? "show" : "hidden"}
-        >
+        <h2 className={`${Styles.heroh2} profileText`}>
           Hi, I'm Victor! <br /> <br /> I'm a Fullstack Developer located in
           Stockholm. <br />I specialize in creating efficient, user-centric{" "}
           <br /> and visually appealing applications.
-        </motion.h2>
+        </h2>
       </div>
       <div id="myprojects" className={Styles.ImgParallax}>
         <div className={Styles.techParallax}>

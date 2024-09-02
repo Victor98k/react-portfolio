@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { motion, useTransform, useScroll } from "framer-motion";
 import Styles from "../Styles/Starteffect.module.css";
-import { useInView } from "react-intersection-observer";
-
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Starteffect = () => {
   const splashRef = useRef(null);
+  const headerRef = useRef(null);
+  const progressRef = useRef(null);
+  const textRef = useRef(null);
   const [isinView, setInView] = useState(false);
 
   useEffect(() => {
@@ -15,53 +15,21 @@ const Starteffect = () => {
       defaults: { duration: 2, ease: "power2.inOut" },
       onComplete: () => setInView(true),
     });
-    tl.to(splashRef.current, { autoAlpha: 1 }).to(splashRef.current, {
-      y: "-100%",
-
-      duration: 2,
-    });
+    tl.to(splashRef.current, { autoAlpha: 1 })
+      .to(progressRef.current, { width: "100%", duration: 2 })
+      .to(splashRef.current, { y: "-100%", duration: 2 });
   }, []);
-
-  // const [refInView, inView] = useInView({
-  //   triggerOnce: false,
-  // });
-  // const variants = {
-  //   hidden: { opacity: 0, x: -100 },
-  //   show: {
-  //     opacity: 1,
-  //     x: 0,
-  //     transition: {
-  //       duration: 2,
-  //     },
-  //   },
-  // };
 
   return (
     <div ref={splashRef} className={Styles.splash}>
-      <motion.h1
-        className={Styles.tranheader}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 4 }}
-        transition={{ delay: 0.5 }}
-      >
+      <h1 ref={headerRef} className={Styles.tranheader}>
         WELCOME
-        <p className={Styles.test}>To</p>
-        <p className={Styles.test}>My</p>
-        <p className={Styles.test}>Portfolio</p>
-        <AiOutlineLoading3Quarters className={Styles.loadingpageicon} />
-      </motion.h1>
-
-      {/* 
-      <div ref={refInView}>
-        <motion.h2
-          className={Styles.heroh2}
-          variants={variants}
-          initial="hidden"
-          animate={inView ? "show" : "hidden"}
-        >
-          Welcome <br /> to <br /> my <br /> portfolio
-        </motion.h2>
-      </div> */}
+      </h1>
+      <h1 ref={textRef} className={Styles.test}>
+        Victor Hall
+      </h1>
+      <AiOutlineLoading3Quarters className={Styles.loadingpageicon} />
+      <div ref={progressRef} className={Styles.progress}></div>
     </div>
   );
 };

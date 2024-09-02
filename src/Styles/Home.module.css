@@ -19,7 +19,6 @@
   justify-content: center;
   align-items: flex-start;
   font-family: "Inter", sans-serif;
-
   font-weight: 100; /* ExtraLight weight */
   /* text-align: center; */
   height: 100vh;
@@ -37,6 +36,12 @@
   word-spacing: 10px;
   letter-spacing: 7px;
   padding-left: 2rem;
+}
+
+.heroIcon {
+  font-size: 6rem;
+  width: 50px;
+  height: 50px;
 }
 .profilehero {
   width: 150px;
@@ -103,7 +108,8 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 100; /* ExtraLight weight */
   padding-left: 3rem;
   font-size: 8rem;
   word-spacing: 1rem;
@@ -243,8 +249,7 @@
 
 @media (max-width: 768px) {
   .homehero {
-    font-size: 2.5rem;
-    padding-top: 2rem;
+    font-size: 4rem;
   }
   .herocontainer {
     display: flex;
