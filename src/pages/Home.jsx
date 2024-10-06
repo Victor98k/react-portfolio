@@ -36,7 +36,9 @@ import macairfigma from "../img/macairmockfigma.png";
 import macprofigma from "../img/macbookprofigma.png";
 import googlepixelmockup from "../img/googlepixelmocup.png";
 import pagetechnthreds from "../img/4pagetechnthreds.png";
-
+import androidbetfantasy from "../img/betfantasy-android.png";
+import betfantasylaptop from "../img/bet-fantasy-laptop.png";
+import betfantasyiphonelanding from "../img/betfantasy-landing-iphone.png";
 // Images 4 testimonials
 import AgnesTestimonal from "../testimonials/agnesTestimonial.png";
 import ChristianTestimonial from "../testimonials/krickantestimonial.png";
@@ -159,9 +161,10 @@ function Home() {
           <ParallaxText className={Styles.parallaxtech} baseVelocity={1}>
             <LazyLoadImage effect="blur" src={macairfigma} alt="" />
 
-            <LazyLoadImage effect="blur" src={macprofigma} alt="" />
+            <LazyLoadImage effect="blur" src={betfantasylaptop} alt="" />
             <LazyLoadImage effect="blur" src={googlepixelmockup} alt="" />
             <LazyLoadImage effect="blur" src={pagetechnthreds} alt="" />
+            <LazyLoadImage effect="blur" src={androidbetfantasy} alt="" />
           </ParallaxText>
         </div>
       </div>
@@ -183,24 +186,40 @@ function Home() {
       {/* Project section */}
 
       <div className={Styles.container}>
-        <div className={Styles.worksite}>
+        <div className={`${Styles.worksite} ${Styles.flexContainer}`}>
           <img
             className={Styles.projectIMG}
-            src={fourpagetechthreds}
+            src={betfantasylaptop}
+            alt="description_of_image"
+          />
+          <img
+            className={Styles.projectIMG}
+            src={betfantasyiphonelanding}
             alt="description_of_image"
           />
 
           <img
             className={Styles.projectwo}
-            src={iphonemock}
+            src={androidbetfantasy}
             alt="description_of_image"
           />
-          <h2 className={Styles.imageDescription}>Tech & Threads</h2>
-          <p className={Styles.imageDescription}>E-commerce</p>
-          <p className={Styles.imageDescription}>
-            A small sized e-commerce application.
+          <h2 className={Styles.imageDescription}>Bet Fantasy</h2>
+          <b className={Styles.imageDescription}>
+            Next.js, Tailwind, MongoDB, Node.js
+          </b>
+          <p
+            className={Styles.imageDescription}
+            style={{ textAlign: "center" }}
+          >
+            I was invited to join alot of diffrent fantasy fotball leagues. But
+            all of theese leagues were the same game... <br />
+            So i made my own twist of a fotball fantasy game.
+            <br />
+            <spa className={Styles.betfantasyinfo}>
+              FYI, Some features of this site might be down due to API costs.
+            </spa>
           </p>
-          <a href="https://tech-n-threds.vercel.app/" target="_blank">
+          <a href="https://bet-fantasy.vercel.app/" target="_blank">
             <button className={Styles.techthredsbtn}>
               Check out the project
             </button>

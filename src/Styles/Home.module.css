@@ -174,15 +174,26 @@
 .projectIMG,
 .projectwo {
   border-radius: 25px;
-  width: 45%;
-  max-width: 300%;
-  margin: 10px;
+  width: 55%;
+  max-width: 400%;
+  margin: 20px;
+
   transition: transform 0.3s ease;
 }
 
 .projectIMG:hover,
 .projectwo:hover {
   transform: scale(1.05);
+}
+
+.betfantasyinfo {
+  color: red;
+}
+.projectImagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
 
 /* Slut på projekt */
@@ -290,9 +301,9 @@
     width: 350px;
   }
   .imageDescription {
-    text-align: center;
+    text-align: center; /* Ensure text is center-aligned */
+    width: 100%; /* Ensure it takes full width for centering */
   }
-
   .projectwo {
     width: 350px;
   }
